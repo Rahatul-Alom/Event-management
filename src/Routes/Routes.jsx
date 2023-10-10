@@ -10,7 +10,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import Contact from "../Pages/Contact/Contact";
-import Offer from "../Pages/Offer/Offer";
+import Booking from "../Pages/Booking/Booking"
 
   const router = createBrowserRouter([
     {
@@ -44,8 +44,8 @@ import Offer from "../Pages/Offer/Offer";
           element: <PrivateRoute><Contact></Contact></PrivateRoute>
         },
         {
-          path:"/Offer",
-          element: <PrivateRoute><Offer></Offer></PrivateRoute>
+          path:"/Booking",
+          element: <PrivateRoute><Booking></Booking></PrivateRoute>
         }
       ]
 

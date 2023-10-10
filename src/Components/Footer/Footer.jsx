@@ -4,7 +4,7 @@ const Footer = () => {
         <footer className="footer footer-center mt-12 p-10 bg-black text-white">
             <aside>
                 <p className="font-bold text-lg my-4">
-                ACME Industries Ltd. <br/>Providing reliable tech since 1992
+                Nature Event Management Ltd. <br/>Providing event managment since 1990
                 </p> 
                 <p>Copyright © 2023 - All right reserved</p>
             </aside> 
