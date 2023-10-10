@@ -4,7 +4,6 @@ import { AuthContext } from "../../../Context/AuthProvider";
 
 const Navbar = () => {
   const {user, logOut} = useContext(AuthContext)
-  console.log(user)
 
   const handleSingOut = () =>{
       logOut()
@@ -18,15 +17,15 @@ const Navbar = () => {
  
    const links = 
      <>
-        <li><NavLink to="/" className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "text-[#FF444A] underline font-bold" : ""}>Home</NavLink></li>
-        <li><NavLink to="/About" className={({ isActive, isPending }) =>
+        <li className="mr-3"><NavLink to="/" className={({ isActive, isPending }) =>
+        isPending ? "pending" : isActive ? "text-[#FF444A] underline font-bold " : ""}>Home</NavLink></li>
+        <li className="mr-3"><NavLink to="/About" className={({ isActive, isPending }) =>
         isPending ? "pending" : isActive ? "text-[#FF444A] underline font-bold" : ""}>About Us</NavLink></li>
         {
            user&& <>
-            <li><NavLink to="/Contact" className={({ isActive, isPending }) =>
+            <li className="mr-3"><NavLink to="/Contact" className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-[#FF444A] underline font-bold" : ""}>Contact Us</NavLink></li>
-            <li><NavLink to="/Booking" className={({ isActive, isPending }) =>
+            <li className="mr-3"><NavLink to="/Booking" className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-[#FF444A] underline font-bold" : ""}> Booking Now </NavLink></li>
           </>
         }
@@ -62,14 +61,20 @@ const Navbar = () => {
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu-horizontal px-1">
             {links}
         </ul>
       </div>
       <div className="navbar-end">
+      <div className="w-10 rounded-full mr-4">
+          <img src="https://i.ibb.co/XsDHQ4n/user-Defaulf.png" />
+      </div>
       {
             user ? 
-            <button onClick={handleSingOut} className="btn bg-amber-900 text-white font-semibold">Sing Out</button>
+              <>
+                 <button onClick={handleSingOut} className="btn bg-amber-900 text-white font-semibold">Sing Out</button>
+                <span> {user.name} </span>
+              </>
             :
             <Link to="/Login"><button className="btn bg-amber-900 text-white font-semibold">Login</button></Link>
 
