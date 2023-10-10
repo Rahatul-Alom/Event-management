@@ -6,7 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
     const [singUpError, setSingUpError] = useState('')
-    const {createUser} = useContext(AuthContext)
+    const {createUser, update} = useContext(AuthContext)
     const handleRegister = e =>{
         e.preventDefault();
         console.log(e.currentTarget)
@@ -40,7 +40,7 @@ const Register = () => {
                 console.log(error)
                 toast(error.message)
             })
-        
+
     }
   return (
     <div>
