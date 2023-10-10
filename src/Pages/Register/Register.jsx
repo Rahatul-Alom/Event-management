@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../Context/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
+    const [singUpError, setSingUpError] = useState('')
     const {createUser} = useContext(AuthContext)
     const handleRegister = e =>{
         e.preventDefault();
@@ -14,6 +17,20 @@ const Register = () => {
         const password = form.get('password');
         console.log(name, photo, email, password)
 
+        if(password.length < 6){
+            setSingUpError('')
+            toast('Password should be at least 6 characters or longer')
+            return
+        }
+        else if(!/^(?=.*[!@#$%^&*])(?=.*[A-Z])/.test(password)){
+          setSingUpError('')
+          toast('Your Password Must have a special charecter and a capital letter')
+          return
+        }
+
+         // reset error
+        setSingUpError('')
+
         // create user
         createUser(email, password)
             .then(result =>{
@@ -21,6 +38,7 @@ const Register = () => {
             })
             .catch(error =>{
                 console.log(error)
+                toast(error.message)
             })
         
     }
@@ -100,6 +118,7 @@ const Register = () => {
           </div>
         </div>
       </div>
+      <ToastContainer/>
     </div>
   );
 };

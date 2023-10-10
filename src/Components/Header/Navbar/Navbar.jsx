@@ -20,10 +20,16 @@ const Navbar = () => {
      <>
         <li><NavLink to="/" className={({ isActive, isPending }) =>
         isPending ? "pending" : isActive ? "text-[#FF444A] underline font-bold" : ""}>Home</NavLink></li>
-        <li><NavLink to="/" className={({ isActive, isPending }) =>
+        <li><NavLink to="/About" className={({ isActive, isPending }) =>
         isPending ? "pending" : isActive ? "text-[#FF444A] underline font-bold" : ""}>About Us</NavLink></li>
-        <li><NavLink to="/" className={({ isActive, isPending }) =>
-        isPending ? "pending" : isActive ? "text-[#FF444A] underline font-bold" : ""}>Contact Us</NavLink></li>
+        {
+           user&& <>
+            <li><NavLink to="/Contact" className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-[#FF444A] underline font-bold" : ""}>Contact Us</NavLink></li>
+            <li><NavLink to="/Offer" className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-[#FF444A] underline font-bold" : ""}> Special Offer </NavLink></li>
+          </>
+        }
         
     </>
 
@@ -65,7 +71,7 @@ const Navbar = () => {
             user ? 
             <button onClick={handleSingOut} className="btn bg-amber-900 text-white font-semibold">Sing Out</button>
             :
-            <Link to="/Login"><button className="btn btn bg-amber-900 text-white font-semibold">Login</button></Link>
+            <Link to="/Login"><button className="btn bg-amber-900 text-white font-semibold">Login</button></Link>
 
         }
       </div>
