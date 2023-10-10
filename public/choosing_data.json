@@ -1,0 +1,28 @@
+[
+    {
+      "id": "1",
+      "name": "Your next event",
+      "image": "https://i.ibb.co/W3PQz9C/Wedding-Cost-p6v406xotmn1iaiwoa6lxpxgeh1fwcxosogbpu4tfk.png",
+      "description": "Got something to celebrate? Then it is time you celebrated the benefits of our Banqueting Suites as the perfect venue for your next event."
+    },
+    {
+      "id": "2",
+      "name": "Large capacity",
+      "image": "https://i.ibb.co/rMcq3Lt/i-Stock-918933880.jpg",
+      "description": "Hold between 500-600 people and offer state-of-the-art technology to support a seamless event.."
+    },
+    {
+      "id": "3",
+      "name": "Experience the finest",
+      "image": "https://i.ibb.co/xLcY1gk/istockphoto-914431570-612x612.jpg",
+      "description": "Cutting edge AV equipment and RGB LED mood lighting can be adapted to suit your theme, along with large LED screens and a dedicated dancefloor.."
+    },
+    {
+      "id": "4",
+      "name": "Easily accessible",
+      "image": "https://i.ibb.co/QC5xxvK/0a5862e8d110c54ffd2dacdd7c66fa16.jpg",
+      "description": "Located in North London, just 20 minutes away from Liverpool Street, with excellent transport links to Central London and 200 designated car parking spaces on site.."
+    }
+
+  ]
+  

@@ -1,0 +1,45 @@
+[
+    {
+      "id": "1",
+      "name": "Elegant Wedding Package",
+      "image": "https://i.ibb.co/M874hxn/257441911-4620034171369322-4595959998484712517-n-orig.jpg",
+      "price": "$7,000",
+      "description": "Make your wedding dreams a reality with our Elegant Wedding Package. We specialize in crafting extraordinary weddings tailored to your unique vision. Our expert team will handle every detail, from stunning floral arrangements to gourmet catering, ensuring your special day is truly unforgettable."
+    },
+    {
+      "id": "2",
+      "name": "Fun-filled Birthday Bash",
+      "image": "https://i.ibb.co/rMcq3Lt/i-Stock-918933880.jpg",
+      "price": "$5000",
+      "description": "Celebrate your birthday with a fun-filled bash brought to life by our service. Our package includes everything you need for a memorable celebration. From decorations to entertainment, we'll make your day exceptional."
+    },
+    {
+      "id": "3",
+      "name": "Romantic Anniversary Dinner",
+      "image": "https://i.ibb.co/xLcY1gk/istockphoto-914431570-612x612.jpg",
+      "price": "$9000",
+      "description": "Rekindle your love with a romantic anniversary dinner organized by our company. Our team will create a magical evening with a candlelit ambiance and a gourmet menu, ensuring your anniversary is truly special."
+    },
+    {
+      "id": "4",
+      "name": "Engagement Event",
+      "image": "https://i.ibb.co/QC5xxvK/0a5862e8d110c54ffd2dacdd7c66fa16.jpg",
+      "price": "$8000",
+      "description": "Announce your engagement with an extravagant party orchestrated by our event management agency. Our package includes a stunning venue, beautiful decorations, catering, and entertainment to make your engagement unforgettable."
+    },
+    {
+      "id": "5",
+      "name": "Retirement Celebration",
+      "image": "https://i.ibb.co/mcsDgvM/061623-Blog-Prosumer-Retirement-Party-Ideas-02.png",
+      "price": "$5000",
+      "description": "Honor the retiree with a heartfelt retirement celebration organized by our company. We provide decorations, a customized retirement cake, and a warm send-off to make this milestone truly memorable."
+    },
+    {
+      "id": "6",
+      "name": "Baby Shower Delight",
+      "image": "https://i.ibb.co/8g6tkLM/q4f0uip-geeta-basra-instagram-625x300-14-June-21.webp",
+      "price": "$4000",
+      "description": "Welcome the new bundle of joy with a delightful baby shower planned by us. Our package includes themed decorations, fun games, and a sweet dessert table to ensure a memorable celebration."
+    }
+  ]
+  
